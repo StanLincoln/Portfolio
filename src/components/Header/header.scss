@@ -1,0 +1,164 @@
+.header {
+  background-color: black;
+  color: white;
+  padding-inline: 20px;
+  border-bottom: #000000 solid 1px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  &__container {
+    max-width: 1315px;
+    margin: 0 auto;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    display: inline-flex;
+    align-self: center;
+    img {
+      width: 150px;
+      vertical-align: middle;
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  &__nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+    li {
+      font-size: 18px;
+      font-weight: 500;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  a {
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    height: 90px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 24px;
+    & svg {
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.7;
+        scale: 1.1;
+      }
+    }
+  }
+}
+
+.nav__link {
+  color: white;
+  transition: opacity 0.2s ease-in;
+}
+
+.nav__link:hover {
+  opacity: 0.8;
+}
+
+.nav__link-active {
+  position: relative;
+}
+
+.nav__link-active::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 70%;
+
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+}
+
+@media (max-width: 1024px) {
+  .header a {
+    font-size: 18px;
+    height: 70px;
+  }
+
+  .header__logo img {
+    width: 110px;
+  }
+}
+
+@media (max-width: 890px) {
+  .header__nav {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    transition: transform 0.3s linear;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    li {
+      border-top: #212121 solid 1px;
+      border-bottom: #363636 solid 1px;
+    }
+
+    a {
+      display: inline-flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .header__nav.active {
+    transform: translateX(100%);
+  }
+
+
+  .header__icons {
+    display: flex;
+    justify-content: center;
+    a {
+      width: auto;
+    }
+  }
+
+  .nav__link-active::before {
+    display: none;
+  }
+
+  .nav__link-active {
+    opacity: 0.7;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+}
