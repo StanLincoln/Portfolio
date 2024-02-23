@@ -16,9 +16,10 @@ const About = () => {
             </div>
             <div className="about__paragraph">
               <p className="about__title">
-                Welcome to my portfolio! My name is Stanislav, <br></br> and I
-                am a junior frontend developer based in Gummersbach, Germany.
+                Welcome to my portfolio! 
               </p>
+              <p className="about__title">My name is Stanislav, and I
+                am a junior frontend developer based in Gummersbach, Germany.</p>
               <p className="about__text">
                 I'm passionate about creating engaging and user-friendly web
                 experiences.
