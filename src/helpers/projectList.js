@@ -23,7 +23,7 @@ const projects = [
 		imgBig: project06Big,
 		skills: 'React, HTML, CSS',
         gitHubLink: 'https://github.com/StanLincoln/Recipes',
-        link: 'https://recipes-one-ebon.vercel.app/'
+        link: 'https://recipes-book-stan-li.vercel.app/'
 	},
 	{
 		title: 'Form validation',
@@ -31,7 +31,7 @@ const projects = [
 		imgBig: project03Big,
 		skills: 'React, HTML, SCSS ',
 		gitHubLink: 'https://github.com/StanLincoln/Form',
-        link: 'https://form-kappa-peach.vercel.app/'
+        link: 'https://form-stan-li.vercel.app/'
 	},
 	{
 		title: 'Landing',
@@ -39,17 +39,15 @@ const projects = [
 		imgBig: project02Big,
 		skills: 'React, HTML, CSS',
 		gitHubLink: 'https://github.com/StanLincoln/DoggySpaReact',
-        link: 'https://doggy-spa-react.vercel.app/'
+        link: 'https://doggy-spa-stan-li.vercel.app/'
 	},
-	
-	
 	{
 		title: 'Random quotes app',
 		img: project05,
 		imgBig: project05Big,
 		skills: 'React, HTML, CSS',
-        gitHubLink: 'https://github.com/StanLincoln/Quote',
-        link: 'https://quotes-six-iota.vercel.app/'
+        gitHubLink: 'https://github.com/StanLincoln/Quotes',
+        link: 'https://quotes-stan-li.vercel.app/'
 	},
 	{
 		title: 'Quiz app',
@@ -57,7 +55,7 @@ const projects = [
 		imgBig: project04Big,
 		skills: 'React, HTML, CSS',
         gitHubLink: 'https://github.com/StanLincoln/Quiz',
-        link: 'https://quiz-hcbm.vercel.app/'
+        link: 'https://quiz-stan-li.vercel.app/'
 	},
 	{
 		title: 'Forecast app',
@@ -65,7 +63,7 @@ const projects = [
 		img: project01,
 		imgBig: project01Big,
 		gitHubLink: 'https://github.com/StanLincoln/Forecast',
-        link: 'https://forecast-gold.vercel.app/'
+        link: 'https://forecast-stan-li.vercel.app/'
 	},
 	
 ];
